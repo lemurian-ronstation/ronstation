@@ -30,3 +30,8 @@ We are not currently accepting translations of the game on our main repository. 
 ## License
 
 Please read the [LEGAL.md](./LEGAL.md) file for information on the licenses of the code and assets in this repository.
+
+## lem-fork
+
+This is the lem-fork branch, intended for Lemuria's additions to the game that are not intended for merging into upstream. Examples include outlandish April Fools' content, Elukera's WT550, and stuff primarily intended just for screwing around on localhost.
+
