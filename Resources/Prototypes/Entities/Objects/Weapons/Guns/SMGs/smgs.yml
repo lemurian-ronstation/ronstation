@@ -238,3 +238,9 @@
     steps: 6
     zeroVisible: true
   - type: Appearance
+
+- type: entity
+  name: Elukera's WT550
+  parent: [ WeaponSubMachineGunWt550 ]
+  id: WeaponSubMachineGunWt550Elukera
+  description: A prized posession of the sector's Supreme Salvager, Elukera May. Her name is engraved on it in a beautifully flowing script font. Uses .35 auto ammo.
