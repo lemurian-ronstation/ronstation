@@ -177,10 +177,11 @@
       zeroVisible: true
     - type: Appearance
 
+
 - type: entity
   name: WT550
-  parent: [ BaseWeaponSubMachineGun, BaseSecurityContraband ]
-  id: WeaponSubMachineGunWt550
+  parent: [ BaseWeaponSubMachineGun ]
+  id: BaseWeaponSubMachineGunWt550
   description: An excellent SMG, produced by NanoTrasen's Small Arms Division. Uses .35 auto ammo.
   components:
   - type: Sprite
@@ -240,7 +241,13 @@
   - type: Appearance
 
 - type: entity
+  name: WT550
+  parent: [ BaseWeaponSubMachineGunWt550, BaseSecurityContraband ]
+  id: WeaponSubMachineGunWt550
+  description: An excellent SMG, produced by NanoTrasen's Small Arms Division. Uses .35 auto ammo.
+
+- type: entity
   name: Elukera's WT550
-  parent: [ WeaponSubMachineGunWt550 ]
+  parent: [ BaseWeaponSubMachineGunWt550, BaseSecurityCargoContraband ]
   id: WeaponSubMachineGunWt550Elukera
   description: A prized posession of the sector's Supreme Salvager, Elukera May. Her name is engraved on it in a beautifully flowing script font. Uses .35 auto ammo.
