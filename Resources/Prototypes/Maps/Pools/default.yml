@@ -5,7 +5,7 @@
   - Bagel
   - Box
   - Convex
-  - Core
+  #- Core
   - Elkridge
   - Fland
   #- Gate
@@ -21,4 +21,4 @@
   #- Train
   - Saltern2
   - Cluster2
-  - Atlas2
+  #- Atlas2 # Ronstation - Derotated for the time being until enough rework is made.
