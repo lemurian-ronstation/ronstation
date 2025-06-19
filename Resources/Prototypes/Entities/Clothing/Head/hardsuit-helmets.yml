@@ -5,24 +5,6 @@
 #Generally, unless you're adding something like caustic damage, you should probably avoid messing with armor here outside of the above scenario.
 
 #CREW HARDSUITS
-#Standard Hardsuit
-- type: entity
-  parent: ClothingHeadHardsuitBase
-  id: ClothingHeadHelmetHardsuitBasic
-  name: basic hardsuit helmet
-  description: A basic-looking hardsuit helmet that provides minor protection against most sources of damage.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hardsuits/basic.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hardsuits/basic.rsi
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadTop
-    - HeadSide
-
 #Atmospherics Hardsuit
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
@@ -42,7 +24,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -108,7 +90,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     clothingVisuals:
       head:
       - state: equipped-head-light
@@ -136,8 +118,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitSalvage
-  name: salvage hardsuit helmet
-  description: A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating for wildlife encounters and dual floodlights.
+  name: mining hardsuit helmet
+  description: A helmet for hard working miners. Comes with basic armor for explosions & wildlife encounters, and dual floodlights to light up your mineshaft.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/salvage.rsi
@@ -149,6 +131,7 @@
   - type: PointLight
     radius: 7
     energy: 3
+    color: "#FFFF90"
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
@@ -168,7 +151,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     clothingVisuals:
       head:
       - state: equipped-head-light
@@ -269,7 +252,7 @@
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitWarden
   name: warden's hardsuit helmet
-  description: A modified riot helmet. Oddly comfortable.
+  description: A heavily modified riot helmet. Oddly comfortable for a wearable brick wall.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/security-warden.rsi
@@ -396,8 +379,9 @@
     highPressureMultiplier: 0.525
     lowPressureMultiplier: 1000
   - type: PointLight
-    radius: 7
-    energy: 3
+    radius: 10
+    energy: 4
+    color: "#FFFF20"
 
 #ANTAG HARDSUITS
 #Blood-red Hardsuit

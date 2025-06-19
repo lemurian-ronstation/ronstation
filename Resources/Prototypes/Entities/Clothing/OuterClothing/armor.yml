@@ -14,6 +14,10 @@
     sprite: Clothing/OuterClothing/Armor/security.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/security.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,2
   - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
     modifiers:
       coefficients:
@@ -52,6 +56,9 @@
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
+  - type: Item
+    shape:
+    - 0,0,2,2
   - type: Armor
     modifiers:
       coefficients:
@@ -72,6 +79,10 @@
     sprite: Clothing/OuterClothing/Armor/armor_reflec.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/armor_reflec.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,2
   - type: Armor
     modifiers:
       coefficients:
@@ -151,6 +162,10 @@
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,2
   - type: Armor
     modifiers:
       coefficients:
@@ -160,6 +175,8 @@
         Heat: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: StaticPrice
+    price: 1500
 
 #Elite web vest
 - type: entity
@@ -172,6 +189,10 @@
     sprite: Clothing/OuterClothing/Vests/elitevest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/elitevest.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,2
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
@@ -188,6 +209,8 @@
     damageCoefficient: 0.5
   - type: FireProtection
     reduction: 0.85
+  - type: StaticPrice
+    price: 2500
 
 #Mercenary web vest
 - type: entity
@@ -200,6 +223,10 @@
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,2
   - type: Armor
     modifiers:
       coefficients:
@@ -227,6 +254,10 @@
       shader: unshaded
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/syndie-raid.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,3
   - type: Armor
     modifiers:
       coefficients:
@@ -237,13 +268,13 @@
         Caustic: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.35
-  #- type: StaminaResistance
-  #  damageCoefficient: 0.45
+  - type: StaminaResistance
+    damageCoefficient: 0.45
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
   #Shoulder mounted flashlight
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       outerClothing:
@@ -252,6 +283,7 @@
       outerClothing-vox:
       - state: equipped-OUTERCLOTHING-light-vox
         shader: unshaded
+  - type: ItemTogglePointLight
   - type: Appearance
   - type: HandheldLight
     addPrefix: false
@@ -288,8 +320,6 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 2
-  - type: Item
-    size: Normal
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSecurityContraband]
@@ -301,6 +331,10 @@
     sprite: Clothing/OuterClothing/Armor/riot.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/riot.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,2
   - type: Armor
     modifiers:
       coefficients:
@@ -323,6 +357,10 @@
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,2
   - type: Armor
     modifiers:
       coefficients:
@@ -418,7 +456,7 @@
         Heat: 0.9
         Radiation: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.7
+    walkModifier: 0.65
     sprintModifier: 0.65
   - type: HeldSpeedModifier
   - type: ExplosionResistance
@@ -445,6 +483,7 @@
         Piercing: 0.4
   - type: ClothingSpeedModifier
     walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ExplosionResistance
     damageCoefficient: 0.4
